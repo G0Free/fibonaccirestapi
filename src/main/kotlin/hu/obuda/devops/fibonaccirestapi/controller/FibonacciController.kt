@@ -19,7 +19,6 @@ class FibonacciController {
 
     @GetMapping(value = ["fibonacci"])
     open fun fibonacci(@RequestParam n: Int): Int? {
-        // TODO - If n is greater than 46 then return BAD REQUEST use HttpStatus
         if(46 < n)
         {
             throw ResponseStatusException(HttpStatus.BAD_REQUEST)
