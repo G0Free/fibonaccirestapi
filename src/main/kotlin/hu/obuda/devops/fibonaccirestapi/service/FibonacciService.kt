@@ -8,7 +8,8 @@ class FibonacciService {
         var number1 = 0
         var number2 = 1
         var sum = 1
-        for (i in 1..n) {
+
+        for (i in 1 until n) {
             sum = number1 + number2
             number1 = number2
             number2 = sum
